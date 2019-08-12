@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Infotecs Table</title>
+        <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="./style.css">
+        <script src="../src/json.js"></script>
+        <script src="../src/elemsInfo.js"></script>
+        <script src="../src/table.js"></script>
+        <script src="../src/search.js"></script>
+        <script src="../src/checkboxes.js"></script>
+        <script src="../src/editing.js"></script>
+    </head>
+    <body>
+        <input id="searchFild" type="search" class="search-field" onsearch="onSearch()">
+        <button id="searchButton" class="search-button" onclick="onClickSearch()">Search</button>
+        <hr>
+        <strong>Select columns:</strong>
+        <table id="checkboxesTable"></table>
+        <script>renderCheckboxesTable()</script>
+        <hr>
+        <div id="table"></div>
+        <script>renderTable()</script>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span id="close" class="close" onclick="onClose()">&times;</span>
+                <h3 align="center">Edit info</h3>
+                <div id="editingFilds"></div>
+                <div align="center" >
+                    <button class="save-button" onclick="onClickSave()">Save</button>
+                </div>
+            </div>      
+        </div>
+    </body>
+</html>
