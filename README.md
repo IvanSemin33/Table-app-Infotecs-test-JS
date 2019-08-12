@@ -1,6 +1,6 @@
 # Table-app-Infotecs-test-JS
 🗒️Table App
-#Usage
+##Usage
 ```
 Open index.html
 ```
